@@ -9,16 +9,17 @@ We only have to keep track of 3 values to perform basic calculations:
     This class needs to provide set, get and reset(? maybe better if done with set) (to 0) methods for each of these.
 */
 
-enum Operator {
-    PLUS,
-    MINUS,
-    MULTI,
-    DEV,
-    CAL, // Cal = Calculate
-    NIL, // Nothing set
-}
-
 public class CalcModel {
+
+    enum Operator {
+        PLUS,
+        MINUS,
+        MULTI,
+        DEV,
+        CAL, // Cal = Calculate
+        NIL, // Nothing set
+    }
+
     private int firstNum;
     private int secondNum;
     private Operator operator;
