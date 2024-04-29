@@ -8,7 +8,7 @@ public class CalcView {
     }
 
     // Updating only the display based on the controller
-    public void UpdateCalcView() {
+    public void UpdateCalcView(int displayNum) {
 
     }
 
