@@ -34,8 +34,8 @@ public class CalcModel {
 
     }
 
-    public void getFirstNum() {
-
+    public int getFirstNum() {
+        return firstNum;
     }
 
     // Methods for Second Num
@@ -43,7 +43,8 @@ public class CalcModel {
 
     }
 
-    public void getSecondNum() {
+    public int getSecondNum() {
+        return secondNum;
 
     }
 
@@ -52,8 +53,8 @@ public class CalcModel {
 
     }
 
-    public void getOperator() {
-
+    public Operator getOperator() {
+        return operator;
     }
 
 }
