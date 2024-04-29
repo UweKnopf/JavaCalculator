@@ -1,6 +1,8 @@
+# JavaCalculator
+
 A Java Calculator using Swing and MVC.
 
-**Basic Requirements**
+## Basic Requirements
 
 - Display
 - 10 Num Keys
@@ -10,10 +12,10 @@ A Java Calculator using Swing and MVC.
 
 It should be possible to chain calculations (e.g. 2+2+2...) and safeguards against common math errors (e.g. dividing by 0).
 
-**Expanded Requirements**
+## Expanded Requirements
 
 WIP
 
-**ULM**
+## ULM
 
 WIP
