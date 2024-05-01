@@ -22,7 +22,7 @@ public class CalcModel {
 
     private int firstNum;
     private int secondNum;
-    private Operator operator;
+    private Operator operator = Operator.NIL;
 
     // set all to zero/
     public CalcModel() {
@@ -31,7 +31,7 @@ public class CalcModel {
 
     // Methods for First Num
     public void setFirstNum(int num) {
-
+        firstNum = num;
     }
 
     public int getFirstNum() {
@@ -40,7 +40,7 @@ public class CalcModel {
 
     // Methods for Second Num
     public void setSecondNum(int num) {
-
+        secondNum = num;
     }
 
     public int getSecondNum() {
@@ -50,7 +50,7 @@ public class CalcModel {
 
     // Methods for Operator
     public void setOperator(Operator op) {
-
+        operator = op;
     }
 
     public Operator getOperator() {
