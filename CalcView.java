@@ -12,7 +12,7 @@ public class CalcView {
 
     public JButton[] ButtonNumArray = new JButton[10];
     public JButton[] ButtonOpArray = { new JButton("x"), new JButton("/"), new JButton("+"), new JButton("-"),
-            new JButton("=") };
+            new JButton("="), new JButton("Clear"), };
     public JLabel Display;
 
     // First Time initialization: window with buttons and display
@@ -36,7 +36,7 @@ public class CalcView {
         f.add(NumPanel);
 
         // Adding all JButtons to the Panel
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             // adding button to the Panel
             OpPanel.add(ButtonOpArray[i]);
         }
