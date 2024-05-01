@@ -11,14 +11,14 @@ We only have to keep track of 3 values to perform basic calculations:
 
 public class CalcModel {
 
-    enum Operator {
+    public enum Operator {
         PLUS,
         MINUS,
         MULTI,
         DEV,
         CAL, // Cal = Calculate
         NIL, // Nothing set
-    }
+    };
 
     private int firstNum;
     private int secondNum;
@@ -30,7 +30,7 @@ public class CalcModel {
     }
 
     // Methods for First Num
-    public void setFirstNum() {
+    public void setFirstNum(int num) {
 
     }
 
@@ -39,7 +39,7 @@ public class CalcModel {
     }
 
     // Methods for Second Num
-    public void setSecondNum() {
+    public void setSecondNum(int num) {
 
     }
 
@@ -49,7 +49,7 @@ public class CalcModel {
     }
 
     // Methods for Operator
-    public void setOperator() {
+    public void setOperator(Operator op) {
 
     }
 
