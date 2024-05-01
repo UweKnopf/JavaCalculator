@@ -22,11 +22,13 @@ public class CalcModel {
 
     private int firstNum;
     private int secondNum;
-    private Operator operator = Operator.NIL;
+    private Operator operator;
 
     // set all to zero/
     public CalcModel() {
-
+        firstNum = 0;
+        secondNum = 0;
+        operator = Operator.NIL;
     }
 
     // Methods for First Num
