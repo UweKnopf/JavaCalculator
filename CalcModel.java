@@ -12,8 +12,8 @@ We only have to keep track of 3 values to perform basic calculations:
 public class CalcModel {
 
     public enum Operator {
-        PLUS,
-        MINUS,
+        ADD,
+        SUB,
         MULTI,
         DEV,
         CAL, // Cal = Calculate
