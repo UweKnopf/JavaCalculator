@@ -34,6 +34,10 @@ public class CalcController {
     }
 
     private void numOpAction(int num) {
+        // For chaining operators together
+        if (model.getOperator() != CalcModel.Operator.NIL) {
+            calculate();
+        }
         switch (num) {
             // mult x
             case 0:
