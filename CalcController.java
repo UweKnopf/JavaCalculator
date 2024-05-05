@@ -7,7 +7,6 @@ public class CalcController {
     public CalcController(CalcView view, CalcModel model) {
         this.view = view;
         this.model = model;
-
     }
 
     // Gets the Buttons from View and adds all the corresponding methods to them
@@ -31,8 +30,6 @@ public class CalcController {
             model.setSecondNum(num + model.getSecondNum() * 10);
             view.UpdateCalcView(model.getSecondNum());
         }
-        System.err.println(Integer.toString(model.getFirstNum()));
-        System.err.println(Integer.toString(model.getSecondNum()));
     }
 
     private void numOpAction(int num) {
@@ -40,6 +37,7 @@ public class CalcController {
         if (model.getOperator() != CalcModel.Operator.NIL) {
             calculate();
         }
+
         switch (num) {
             // mult x
             case 0:
@@ -64,15 +62,9 @@ public class CalcController {
             // equal =
             case 4:
                 // new method to calculate?
-                // model.setOperator(CalcModel.Operator.CAL);
-                if (model.getOperator() == CalcModel.Operator.NIL) {
-
-                } else {
+                if (model.getOperator() != CalcModel.Operator.NIL) {
                     calculate();
-
                 }
-
-                // model.setFirstNum(num + model.getFirstNum() * 10);
 
                 break;
             // Clear
@@ -95,6 +87,7 @@ public class CalcController {
             case MULTI:
                 model.setFirstNum(model.getFirstNum() * model.getSecondNum());
                 model.setSecondNum(0);
+
                 break;
 
             case DEV:
@@ -124,9 +117,6 @@ public class CalcController {
         }
 
         model.setOperator(CalcModel.Operator.NIL);
-
-        System.err.println(Integer.toString(model.getFirstNum()));
-        System.err.println(Integer.toString(model.getSecondNum()));
         view.UpdateCalcView(model.getFirstNum());
 
     }

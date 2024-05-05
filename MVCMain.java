@@ -4,6 +4,7 @@ public class MVCMain {
         CalcView view = new CalcView();
         CalcModel model = new CalcModel();
         CalcController controller = new CalcController(view, model);
+
         controller.actionBinding();
 
     }
