@@ -26,8 +26,10 @@ public class CalcController {
     private void numButtonAction(int num) {
         if (model.getOperator() == CalcModel.Operator.NIL) {
             model.setFirstNum(num + model.getFirstNum() * 10);
+            view.UpdateCalcView(model.getFirstNum());
         } else {
             model.setSecondNum(num + model.getSecondNum() * 10);
+            view.UpdateCalcView(model.getSecondNum());
         }
         System.err.println(Integer.toString(model.getFirstNum()));
         System.err.println(Integer.toString(model.getSecondNum()));
@@ -67,6 +69,7 @@ public class CalcController {
 
                 } else {
                     calculate();
+
                 }
 
                 // model.setFirstNum(num + model.getFirstNum() * 10);
@@ -78,6 +81,7 @@ public class CalcController {
                 model.setFirstNum(0);
                 model.setSecondNum(0);
                 model.setOperator(CalcModel.Operator.NIL);
+                view.UpdateCalcView(model.getFirstNum());
 
                 break;
             default:
@@ -119,6 +123,7 @@ public class CalcController {
 
         System.err.println(Integer.toString(model.getFirstNum()));
         System.err.println(Integer.toString(model.getSecondNum()));
+        view.UpdateCalcView(model.getFirstNum());
 
     }
 }
