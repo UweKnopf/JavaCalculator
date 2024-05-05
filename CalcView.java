@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.GridLayout;
-import java.awt.BorderLayout;
-import java.awt.ComponentOrientation;
 
 /*
  * Buttons 0-9 in one Array and Grid (Handled in CalcCon)
