@@ -98,8 +98,12 @@ public class CalcController {
                 break;
 
             case DEV:
-                model.setFirstNum(model.getFirstNum() / model.getSecondNum());
-                model.setSecondNum(0);
+                try {
+                    model.setFirstNum(model.getFirstNum() / model.getSecondNum());
+                    model.setSecondNum(0);
+                } catch (Exception e) {
+                    System.err.println("no division by zero");
+                }
 
                 break;
 
